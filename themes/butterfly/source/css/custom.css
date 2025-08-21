@@ -1,0 +1,345 @@
+
+/* 侧边栏：目录单独存在  */
+#aside-content {
+    width: 0;
+}
+.layout>div:first-child {
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1600px) {
+    #aside-content #card-toc {
+        display: none
+    }
+}
+@media screen and (min-width: 1600px) {
+    #aside-content #card-toc {
+        width: 200px;
+        box-shadow: none;
+        background: transparent;
+    }
+
+}
+/*--------------------------------------------------------
+/* 修改全局背景颜色：渐变 */
+#web_bg {
+    background: url(/img/bg.svg);
+}
+
+/* 修改文章卡片背景透明度 */
+#recent-posts .recent-post-item {
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#footer::before {
+    content: none;
+}
+
+#footer-wrap {
+    color: var(--font-color);
+    padding: 50px 5% 35px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--ichika-footer-bg);
+    position: relative;
+}
+
+#footer-wrap>div {
+    width: 50%;
+}
+
+#footer-left {
+    text-align: left
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#footer-wrap .footer-button {
+    display: flex;
+    margin: 15px 0;
+}
+
+#footer-wrap .footer-button>a {
+    font-size: 1.3rem;
+    margin-right: 24px;
+    transition: 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    color: white;
+}
+
+#footer-wrap .footer-button>a:hover {
+    background: pink;
+    transition: 0.2s;
+    text-decoration-line: none;
+}
+
+#footer-wrap .footer-button>a i {
+    margin: auto;
+    margin-left: 9.5px;
+    margin-bottom: 1px;
+    line-height: 42px;
+}
+#footer-wrap .iconfont {
+    font-size: 1.5rem;
+}
+
+#footer-right {
+    text-align: right;
+    height: max-content;
+    margin-top: auto;
+}
+
+#footer-right p,
+#footer-right a {
+    color: var(--ichika-font-grey);
+}
+
+.footer-totop {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-totop i {
+    font-size: 2rem;
+    animation: footerToTop 1.2s linear infinite;
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-info a {
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.footer-info a:hover {
+    color: var(--ichika-color) !important;
+    transition: 0.2s;
+}
+
+.footer-info a:hover img {
+    filter: none !important;
+    transition: 0.2s;
+}
+
+.footer-service img {
+    height: 20px;
+    filter: grayscale(1);
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.footer-service img:hover {
+    filter: none;
+    transition: 0.2s;
+}
+
+@keyframes footerToTop {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-25%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    #footer-wrap>div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer-wrap .footer-button>a {
+        margin: 0 auto;
+    }
+}
+
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(187, 228, 255, 0.5);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49c4f5;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+
+
+
+
+
+
+/* 文章版权卡片 */
+.post-copyright {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+/* 文章主体框*/
+#post, #page, #archive, #category{
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/* 归档不显示文章封面 */
+.article-sort-item-img {
+    display: none;
+}
+.article-sort-item-info{
+    padding: 0;
+}
+
+
+/* 导航栏样式  */
+#page-header.not-top-img #nav {
+    background: rgba(255, 255, 255);
+}
+
+#nav .site-page {
+    font-size: 16px;
+}
+#nav .menus_items {
+    position: absolute;
+    width: fit-content;
+    white-space: nowrap;  /*强制不换行*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nav .menus_items .menus_item:hover .menus_item_child {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#nav .menus_items .menus_item .menus_item_child li {
+    border-radius: 15px;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:first-child {
+    border-radius: 15px;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:last-child {
+    border-radius: 15px;
+}
+
+#nav .menus_items .menus_item .menus_item_child li {
+    transition: all 0.5s ease 0s;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:hover {
+    background-color: #ffcfe4;
+}
+
+/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(1) .menus_item_child {
+    left: -65px;
+}
+
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+    left: -80px;
+}
+
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+    left: -80px;
+}
+
+.menus_items .menus_item:nth-child(4) .menus_item_child {
+    left: -40px;
+}
+
+.menus_items .menus_item:nth-child(5) .menus_item_child {
+    left: -75px;
+}
+
+#nav .site-page:not(.child):after {
+    border: 15px;
+}
+
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(187, 228, 255, 0.5);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49c4f5;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+@media screen and (min-width: 769px) {
+    #recent-posts .recent-post-item .post_cover {
+        clip-path: polygon(0% 50%, 100% -100%, 100% 100%, 33% 100%);
+    }
+}

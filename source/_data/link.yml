@@ -1,0 +1,161 @@
+- class_name: 😘友人帐
+  flink_style: volantis
+  random: false
+  link_list:
+    - name: Jerry
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+    
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+      descr: 分享设计与科技生活
+
+    - name: 铭心石刻
+      link: https://blog.kouseki.cn/
+      avatar: https://blog.kouseki.cn/imgs/avatar.webp
+      descr: 愿岁并谢，与友长兮
+
+    - name: 定の栈
+      link: https://saop.cc
+      avatar: https://saop.cc/avatar.webp
+      descr: LINK START!
+
+    - name: WuWu
+      link: https://ming-e.space
+      avatar: https://ming-e.space/images/1.webp
+      descr: 车万人万岁
+
+    - name: 卿以君歌
+      link: https://www.mekimto.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=2882740&s=100
+      descr: 幻术的世界有什么不好？
+
+    - name: 青稚の空间
+      link: https://blog.linux-qitong.top/
+      avatar: https://blog.linux-qitong.top/img/avatar.webp
+      descr: 越努力，越幸运.
+    - name: Revincx
+      link: https://blog.revincx.icu/
+      avatar: https://cdn.jsdelivr.net/gh/Revincx/blog-assets@master/images/avatar.jpg
+      descr: 可爱就是正义~
+    
+    - name: 懒觉猫先生
+      link: https://blog.luoaicheng.cn/
+      avatar: https://blog.luoaicheng.cn/img/logo.png
+      descr: 睡觉睡觉，睡觉睡觉，喵喵
+    - name: Qeem
+      link: http://itstarqeem.space
+      avatar: https://pic.imgdb.cn/item/64c65629a9eb352efd93a379.webp
+      descr: 阿巴阿巴阿巴..
+      
+    - name: 三玖の博客
+      link: https://blog.yuuka.top/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1973323029&s=100
+      siteshot: https://s2.loli.net/2024/11/01/3foSs9wzXtDN1Gu.jpg
+      descr: Forgive or Forget.
+    - name: YOUXIANYU
+      link: https://youxianyu.cn/
+      avatar: https://www.youxianyu.cn/img/c.c.jpg
+      descr: 唐人曾
+    - name: 篱芷
+      link: https://lizhic.cn/
+      avatar: https://www.lizhic.cn/img/head.jpg
+      descr: 唐人炎（JB）
+    - name: 探人间
+      link: https://www.hydsb0.com
+      avatar: https://s21.ax1x.com/2025/07/13/pVlsr8S.jpg
+      descr: 努力吃上更贵的雪糕！
+
+    - name: 李小白
+      link: https://blog.lxb.icu/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=648226460&s=640
+      descr: 风共舞，随心而行
+
+    - name: 清欲の小窝
+      link: https://blog.leoo.fun
+      descr: 沙雕网友清欲的碎碎念
+      avatar: https://bu.dusays.com/2024/11/11/6731ad4c16396.jpg
+
+    - name: 鈴奈咲桜
+      link: https://blog.sakura.ink
+      avatar: https://blog.sakura.ink/_astro/avatar.B8d6PP-N_2a0uDN.webp
+      descr: 愛することを忘れないで
+
+    - name: JustPureH2O
+      link: https://justpureh2o.cn
+      avatar: https://img.justpureh2o.cn/image/667f85b1d9c307b7e9ef9f2c.jpg
+      descr: 穷方圆平直之情，尽规矩准绳之用。
+
+    - name: bbb-lsy07
+      link: https://blog.6uu.us/
+      avatar: https://blog.6uu.us/upload/87790bc9-63eb-4420-ae4f-75872fec057d.png
+      descr: 科技激荡人文，洞见智慧本真。]
+
+    - name: ElysiumStack
+      link: https://www.elysium-stack.cn/
+      avatar: https://www.elysium-stack.cn/upload/ee0757e6-ebb4-46d0-a388-660f648653ea.jpg
+      descr: 不会摄影的设计师不是优秀的旅行家
+
+
+
+      
+- class_name: ❌失联名单
+  flink_style: volantis
+  random: false
+  link_list:
+    - name: Lee
+      link: https://happylee.cn
+      avatar: https://happylee.cn/img/avatar.jpg
+      siteshot: img/404.jpg
+      descr: 内心丰盈者，独行也如众
+      
+    - name: Chacks
+      link: https://www.chacks.top/
+      avatar: https://bu.dusays.com/2024/07/09/668d4448c1982.png
+      siteshot: img/404.jpg
+      descr: 持光逐梦，照亮星途
+
+    - name: gywlg
+      link: https://gywlg.cn
+      avatar: https://gywlg.cn/file/1723907992249.jpg
+      siteshot: img/404.jpg
+      descr: 一个珍藏故事与探讨智慧的地方
+
+- class_name: 🎯极速导航
+  flink_style: butterfly
+  random: false
+  link_list:
+    - name: MDTU
+      link: https://markdown.devtool.tech/app
+      avatar: https://markdown.devtool.tech/icon.svg
+      descr: 适合开发者写博客的编辑器
+
+    - name: GitHub
+      link: https://github.com/
+      avatar: https://github.githubassets.com/favicons/favicon.svg
+      descr:  Let’s build from here · GitHub
+
+    - name: Waline
+      link: https://waline.js.org/
+      avatar: https://waline.js.org/logo.png
+      descr: 一款简洁、安全的评论系统。
+    
+    - name: 雨云
+      link: https://www.rainyun.com/
+      avatar: https://www.rainyun.com/img/icons/safari-pinned-tab.svg
+      descr: 老一代云服务提供商
+    
+    - name: 123APPS
+      link: https://123apps.com/cn/
+      avatar: https://123apps.com/static/i/v3/apple-touch-icon.png
+      descr: 一个集成了许多且免费高质量的在线工具平台
+
+    - name: CSS Scan
+      link: https://getcssscan.com/css-box-shadow-examples
+      avatar: https://toastlog.com/img/logos/cssscan.svg
+      descr: All of these box-shadow were copied using.
+      
+
+

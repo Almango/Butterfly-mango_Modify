@@ -1,0 +1,100 @@
+#footer-wrap
+  #footer-left
+    .footer-title
+      span= config.title + ' | '
+      if theme.footer.owner.enable
+        - var now = new Date()
+        - var nowYear = now.getFullYear()
+      if theme.footer.owner.since && theme.footer.owner.since != nowYear
+        span.footer-copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+      else
+        span.footer-copyright!= `&copy;${nowYear} By ${config.author}`
+    .footer-button
+      a(title='GitHub' href='https://github.com/Almango')
+        i.iconfont.icon-GitHub
+      a(title='微博' href='https://weibo.com/u/7936064867')
+        i.iconfont.icon-weibo
+      a(title='bilibili' href='https://space.bilibili.com/1278951656?spm_id_from=333.1007.0.0')
+        i.iconfont.icon-bilibili
+      a(title='Email' href='https://www.microsoft.com/zh-cn/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fowa%2f0%2f%3fstate%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8&sdf=0')
+        i.iconfont.icon-email
+      a(title='RSS' href='#')
+        i.iconfont.icon-RSS_flat
+    .wordcount
+    - let allword = totalcount(site)
+    span= 'Almano已经写了 ' + allword + ' 字，'
+    if isNaN(allword)
+      - allword= Number(allword.replace('k', ''))
+      if allword< 50
+        span= "还在努力更新中.. 加油！加油啦！"
+      else if allword< 70
+        span= "好像写完一本 埃克苏佩里 的 《小王子》 了啊"
+      else if allword< 90
+        span= "好像写完一本 鲁迅 的 《呐喊》 了啊"
+      else if allword< 100
+        span= "好像写完一本 林海音 的 《城南旧事》 了啊"
+      else if allword< 110
+        span= "好像写完一本 马克·吐温 的 《王子与乞丐》了！ 了啊"
+      else if allword< 120
+        span= "好像写完一本 鲁迅 的 《彷徨》 了啊"
+      else if allword< 130
+        span= "好像写完一本 余华 的 《活着》 了啊"
+      else if allword< 140
+        span= "好像写完一本 曹禺 的 《雷雨》 了啊"
+      else if allword< 150
+        span= "好像写完一本 史铁生 的 《宿命的写作》 了啊"
+      else if allword< 160
+        span= "好像写完一本 伯内特 的 《秘密花园》 了啊"
+      else if allword< 170
+        span= "好像写完一本 曹禺 的 《日出》 了啊"
+      else if allword< 180
+        span= "好像写完一本 马克·吐温 的 《汤姆·索亚历险记》 了啊"
+      else if allword< 190
+        span= "好像写完一本 沈从文 的 《边城》 了啊"
+      else if allword< 200
+        span= "好像写完一本 亚米契斯 的 《爱的教育》 了啊"
+      else if allword< 210
+        span= "好像写完一本 巴金 的 《寒夜》 了啊"
+      else if allword< 220
+        span= "好像写完一本 东野圭吾 的 《解忧杂货店》 了啊"
+      else if allword< 230
+        span= "好像写完一本 莫泊桑 的 《一生》 了啊"
+      else if allword< 250
+        span= "好像写完一本 简·奥斯汀 的 《傲慢与偏见》 了啊"
+      else if allword< 280
+        span= "好像写完一本 钱钟书 的 《围城》 了啊"
+      else if allword< 300
+        span= "好像写完一本 张炜 的 《古船》 了啊"
+      else if allword< 310
+        span= "好像写完一本 茅盾 的 《子夜》 了啊"
+      else if allword< 320
+        span= "好像写完一本 阿来 的 《尘埃落定》 了啊"
+      else if allword< 340
+        span= "好像写完一本 艾米莉·勃朗特 的 《呼啸山庄》 了啊"
+      else if allword< 350
+        span= "好像写完一本 雨果 的 《巴黎圣母院》 了啊"
+      else if allword< 360
+        span= "好像写完一本 东野圭吾 的 《白夜行》 了啊"
+      else
+        span= "好像写完一本我国著名的 四大名著 了！！！"
+    else
+      span= "还在努力更新中.. 加油！加油啦！"
+  #footer-right
+    .footer-totop
+      i.fas.fa-chevron-up(onclick='scrollToTop()')
+    .footer-info
+      p= '使用Hexo框架 | 本站基于butterfly主题魔改'
+      
+      a(title='萌ICP备号 20240146' href='https://icp.gov.moe/?keyword=20240146') #[img(src='/img/footer_moe.png' alt='备案图标' style='height: 16px;margin-right: 3px;filter: grayscale(1);')]萌ICP备号: 20240146号
+      a(title='茶ICP备号 2025080043' href='https://icp.redcha.cn/beian/ICP-2025080043.html') #[img(src='/img/footer_cha.png' alt='备案图标' style='height: 16px;margin-right: 3px;filter: grayscale(1);')]茶ICP备: 2025080043号
+     
+    
+    .footer-service
+      a(title='腾讯云' href='https://cloud.tencent.com')
+        img(alt='腾讯云' src='https://cdn.ichika.cc/typora/202211071552681.png!towebp')
+      a(title='51LA' href='https://www.51.la')
+        img(alt='51LA' src='https://cdn.ichika.cc/typora/202211071552427.png!towebp')
+      a(title='CC BY-NC-SA 4.0' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh')
+        img(alt='CC BY-NC-SA 4.0' src='https://cdn.ichika.cc/typora/202211071552856.png!towebp')
+
+
