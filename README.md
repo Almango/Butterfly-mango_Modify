@@ -24,6 +24,6 @@
 
  - 效果图：
 
-![](https://testingcf.jsdelivr.net/gh/Almango/Blog_imgbed@main/other/index.png)
+![](https://gcore.jsdelivr.net/gh/Almango/Blog_imgbed@main/other/Butterfly-mango_Modify_1.png)
 
-
+![](https://gcore.jsdelivr.net/gh/Almango/Blog_imgbed@main/other/Butterfly-mango_Modify_2.png)
